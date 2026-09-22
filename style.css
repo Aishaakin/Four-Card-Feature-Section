@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Grey-500: hsl(234, 12%, 34%);
+--Grey-400: hsl(212, 6%, 44%);
+--White: hsl(0, 0%, 100%);
+--font-family: "Poppins", sans-serif ;
+--font-1: 16px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-family: var(--font-family);
+    gap: 20px;
+
+}
+#text {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    text-align: center;
+    margin-top: 50px;
+}
+.supervisor {
+grid-column: 1 / 2;
+grid-row: 2 / 4;
+border-top: 3px solid var(--Cyan);
+border-radius: 5px;
+background-color: var(--White);
+box-shadow: 0px 0px 20px var(--Grey-400);
+text-align: center;
+}
+.karma {
+grid-column: 2 / 3;
+grid-row: 3 / 4;
+border-top: 3px solid var(--Orange);
+border-radius: 5px;
+background-color: var(--White);
+text-align: center;
+box-shadow: 0px 0px 20px var(--Grey-400);
+}
+.calculator {
+grid-column: 3 / 4;
+grid-row: 2 / 4;
+border-top: 3px solid var(--Blue);
+border-radius: 5px;
+background-color: var(--White);
+text-align: center;
+box-shadow: 0px 0px 20px var(--Grey-400);
+}
+.team {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border-top: 3px solid var(--Red);
+    border-radius: 5px;
+    background-color: var(--White);
+    box-shadow: 0px 0px 20px var(--Grey-400);
+    text-align: center;
+}
+p {
+    color: var(--Grey-400);
+    font-size: 16px;
+    font-weight: 400;
+}
+h1 {
+    color: var(--Grey-500);
+    font-size: 20px;
+    font-weight: 400;
+}
+h2 {
+    color: var(--Grey-500);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--Grey-400);
+}
+#header {
+    color: var(--Grey-500);
+    font-size: 24px;
+    font-weight: 800;
+}
+a {
+    text-decoration: none;
+    color: var(--Cyan);
+}
+a:hover {
+    color: var(--Grey-500);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
