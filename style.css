@@ -17,7 +17,9 @@
     grid-template-rows: repeat(3, 1fr);
     font-family: var(--font-family);
     gap: 20px;
-
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 #text {
     grid-column: 1 / 4;
@@ -28,38 +30,46 @@
 .supervisor {
 grid-column: 1 / 2;
 grid-row: 2 / 4;
-border-top: 3px solid var(--Cyan);
+border-top: 5px solid var(--Cyan);
 border-radius: 5px;
 background-color: var(--White);
 box-shadow: 0px 0px 20px var(--Grey-400);
-text-align: center;
+/* text-align: center; */
+position: relative;
+padding: 10px;
 }
 .karma {
 grid-column: 2 / 3;
 grid-row: 3 / 4;
-border-top: 3px solid var(--Orange);
+border-top: 5px solid var(--Orange);
 border-radius: 5px;
 background-color: var(--White);
-text-align: center;
+/* text-align: center; */
+position: relative;
+padding: 10px;
 box-shadow: 0px 0px 20px var(--Grey-400);
 }
 .calculator {
 grid-column: 3 / 4;
 grid-row: 2 / 4;
-border-top: 3px solid var(--Blue);
+border-top: 5px solid var(--Blue);
 border-radius: 5px;
 background-color: var(--White);
-text-align: center;
+position: relative;
+/* text-align: center; */
+padding: 10px;
 box-shadow: 0px 0px 20px var(--Grey-400);
 }
 .team {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    border-top: 3px solid var(--Red);
+    border-top: 5px solid var(--Red);
     border-radius: 5px;
     background-color: var(--White);
     box-shadow: 0px 0px 20px var(--Grey-400);
-    text-align: center;
+    position: relative;
+    /* text-align: center; */
+    padding: 10px;
 }
 p {
     color: var(--Grey-400);
@@ -93,4 +103,17 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+img {
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 500px) {
+     .karma, .calculator, .supervisor, .team {
+        grid-column: 1;
+        grid-row: auto;
+     }
 }
