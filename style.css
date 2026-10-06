@@ -66,6 +66,7 @@ box-shadow: 0px 0px 20px var(--Grey-400);
     color: var(--Grey-400);
     font-family: var(--font-family);
     font-weight: 400;
+    padding-bottom: 80px;
 }
 .team {
     grid-column: 2 / 3;
@@ -121,8 +122,22 @@ img {
 }
 
 @media (max-width: 500px) {
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 30px;
+    }
+
+    #text {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
      .karma, .calculator, .supervisor, .team {
         grid-column: 1;
         grid-row: auto;
+        box-sizing: border-box;
+        min-height: 250px;
+        padding: 25px 30px 80px;
      }
 }
